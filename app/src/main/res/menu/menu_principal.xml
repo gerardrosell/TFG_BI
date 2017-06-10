@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/ShowList"
+        android:checkable="true"
+        android:enabled="true"
+        android:icon="@drawable/ic_llista"
+        android:orderInCategory="100"
+        android:title="Show hours list"
+        android:visible="true"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/ShowProd"
+        android:checkable="true"
+        android:enabled="true"
+        android:icon="@drawable/ic_percentatge"
+        android:orderInCategory="100"
+        android:title="Show Productivity"
+        android:visible="true"
+        app:showAsAction="always" />
+
+</menu>

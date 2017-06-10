@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.grupoactive.bi.rosellcardus.gerard.tfg_bi.Productivity"
+    android:background="@color/colorBackground">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="10">
+
+        <TableRow
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/Percentatges"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:text="@string/_0_0" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/prod"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="\n % Productiu\n"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:background="#a24"
+                android:fontFamily="casual"
+                android:textStyle="bold"/>
+
+            <ProgressBar
+                android:id="@+id/Prod_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progressDrawable="@drawable/progress_bar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/prodpropApp"
+                android:layout_weight="2" />
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/prodApp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/prod"
+                android:text="%\nProdictiu + App"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="#a24"
+                android:background="@color/colorAccent"
+                android:fontFamily="casual"
+                android:textStyle="bold"/>
+
+            <ProgressBar
+                android:id="@+id/ProdApp_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progressDrawable="@drawable/progress_bar"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:layout_alignEnd="@+id/Prod_bar"
+                android:layout_below="@+id/Prod_bar" />
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/PercentatgesProp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:text="@string/_0_0" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/prodprop"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/prodApp"
+                android:text="% Proporcional\n"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:background="#a24"
+                android:fontFamily="casual"
+                android:textStyle="bold"/>
+
+            <ProgressBar
+                android:id="@+id/ProdProp_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progressDrawable="@drawable/progress_bar"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/ProdApp_bar" />
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/prodpropApp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/prodprop"
+                android:text="% Proporcional + App"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="#a24"
+                android:background="@color/colorAccent"
+                android:fontFamily="casual"
+                android:textStyle="bold"/>
+
+            <ProgressBar
+                android:id="@+id/ProdPropApp_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progressDrawable="@drawable/progress_bar"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/ProdProp_bar" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
